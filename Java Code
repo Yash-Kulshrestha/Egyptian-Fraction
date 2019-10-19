@@ -27,7 +27,7 @@ b++;
     }
     else {
       int unitDen = (int)Math.ceil(den/(num*1.0));
-      ++b;
+      b++;
       a[b] = unitDen;
       int gcdOfNumbers = gratest_common_divissor((num*unitDen) - den, den*unitDen);
       greedyEgyptianFraction(((num*unitDen) - den)/gcdOfNumbers, (den*unitDen)/gcdOfNumbers);
