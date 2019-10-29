@@ -14,11 +14,6 @@ class Fraction {
     return d;
   }
 
-  public static void unitDenInit() {
-    for(int i=0; i<10; i++) {
-      a[i] = 0;
-    }
-  }
 
   public static void greedyEgyptianFraction(int num, int den) {
     if(num == 1) {
@@ -35,7 +30,7 @@ b++;
   }
   public static void main(String[] args) {
   Scanner sc=new Scanner(System.in);
-    unitDenInit();
+    Arrays.fill(a,0);
 System.out.println("Enter the numerator");
 int nr=sc.nextInt();
 System.out.println("Enter the denomenator");
